@@ -1,0 +1,43 @@
+{
+  "roles": {
+    "admin": {
+      "label": "Admin",
+      "dashboard": "admin/index.php",
+      "permissions": ["read", "create", "update", "delete"]
+    },
+    "dosen": {
+      "label": "Dosen",
+      "dashboard": "dosen/index.php",
+      "permissions": ["read", "create", "update", "delete"]
+    },
+    "mahasiswa": {
+      "label": "Mahasiswa",
+      "dashboard": "mahasiswa/index.php",
+      "permissions": ["read", "create", "update", "delete"]
+    },
+    "kaprodi": {
+      "label": "Kaprodi",
+      "dashboard": "kaprodi/index.php",
+      "permissions": ["read", "create", "update", "delete"]
+    },
+    "dekan": {
+      "label": "Dekan",
+      "dashboard": "dekan/index.php",
+      "permissions": ["read", "create", "update", "delete"]
+    }
+  },
+  "modules": {
+    "buku": {
+      "label": "Books",
+      "allowed_roles": ["admin", "dosen", "mahasiswa"]
+    },
+    "barang": {
+      "label": "Barang",
+      "allowed_roles": ["admin", "kaprodi"]
+    },
+    "matakuliah": {
+      "label": "Mata Kuliah",
+      "allowed_roles": ["admin", "dekan"]
+    }
+  }
+}
